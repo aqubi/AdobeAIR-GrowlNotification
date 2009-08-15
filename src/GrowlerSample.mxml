@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mx:WindowedApplication windowComplete="onWindowCompleted()" headerHeight="17" alpha="1.0" showFlexChrome="true" titleAlignment="left" title="Growler Sample" layout="absolute" backgroundColor="#ffffff" showStatusBar="false" xmlns:mx="http://www.adobe.com/2006/mxml">
+<mx:Script source="GrowlerSampleScript.as"/>
+<mx:Metadata>
+
+</mx:Metadata><mx:RadioButtonGroup id="priority"/>
+<mx:TextArea text="ども。先日as3growlで挫折したaqubiです。でも、mx:Windowを使ってできたよ！やったよ！" id="areaMessage" width="210" y="40" x="150" height="130"/>
+<mx:Button click="showGrowl()" label="Load Growl" width="150" y="180" x="110" height="40"/>
+<mx:Label text="表示するメッセージ" height="20" width="100" y="10" x="200"/>
+<mx:Label text="プライオリティ" height="20" width="100" y="10" x="20"/>
+<mx:VBox width="130" y="40" x="10" height="130">
+<mx:HBox width="100%" height="20">
+<mx:RadioButton groupName="priority" label="緊急" data="4" width="100" y="40" x="10" height="20"/>
+</mx:HBox>
+<mx:HBox width="100%" height="20">
+<mx:RadioButton groupName="priority" label="重要" data="3" width="100" y="60" x="10" height="20"/>
+</mx:HBox>
+<mx:HBox width="100%" height="20">
+<mx:RadioButton groupName="priority" label="標準" data="2" width="100" y="80" x="10" height="20"/>
+</mx:HBox>
+<mx:HBox width="100%" height="20">
+<mx:RadioButton groupName="priority" label="やや重要" data="1" width="100" y="100" x="10" height="20"/>
+</mx:HBox>
+<mx:HBox width="100%" height="20">
+<mx:RadioButton groupName="priority" label="重要でない" selected="true" data="0" width="100" y="120" x="10" height="20"/>
+</mx:HBox>
+</mx:VBox>
+</mx:WindowedApplication>

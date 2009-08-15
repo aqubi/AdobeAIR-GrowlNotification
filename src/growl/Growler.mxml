@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mx:Window cornerRadius="5" windowComplete="onWindowComplete()" showGripper="false" transparent="true" show="onShow()" systemChrome="none" showTitleBar="false" borderThickness="0" visible="false" titleAlignment="left" title="growler" backgroundAlpha="0" addedToStage="onAddToStage()" horizontalScrollPolicy="off" layout="absolute" showStatusBar="false" verticalScrollPolicy="off" xmlns:mx="http://www.adobe.com/2006/mxml" width="300" height="100%">
+<mx:Script source="GrowlerScript.as"/>
+<mx:HBox verticalAlign="middle" click="closeGrowler()" width="100%" height="100%">
+<mx:Image maxHeight="30" maxWidth="30" source="{titleImage}" id="imgTitle"/>
+<mx:Box cornerRadius="10" paddingLeft="5" focusEnabled="false" paddingBottom="5" alpha="0.8" buttonMode="false" fontSize="12" borderThickness="0" id="box" paddingRight="5" paddingTop="5" borderStyle="solid" width="250">
+<mx:Text text="{message}" id="txtMessage" width="240"/>
+</mx:Box>
+</mx:HBox>
+</mx:Window>
